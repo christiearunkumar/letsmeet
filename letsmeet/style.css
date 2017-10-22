@@ -1,0 +1,108 @@
+#LetsMeet .tab-pane {
+	padding: 10px;
+}
+
+footer {
+  margin: 0px auto;
+}
+
+.card
+{
+    z-index: 1;
+    position: relative;
+    width: 180px;
+    float: left;
+    margin: 5px;
+    background-color: white;
+    border: #ccc 1px solid;
+    box-shadow: #ccc 2px 2px 2px;
+    cursor: pointer;
+}
+.card.invited
+{
+    background-color: #dbffde;
+}
+.banner
+{
+    z-index: 2;
+    position: relative;
+    margin-top: -154px;
+    width:100%;
+    height:150px;
+    background-image: url("https://snap-photos.s3.amazonaws.com/img-thumbs/960w/RQ2Z75PQIN.jpg");
+    background-size: cover;
+    border-bottom: solid 1px lightgrey;
+}
+
+.banner.active
+{
+    height: 0;
+  
+}
+
+.photo
+{
+    z-index: 3;
+    position: relative;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background-color: white;
+    margin: 0 auto;
+    background-image: url("https://filmshotfreezer.files.wordpress.com/2011/07/untitled-1.jpg");
+    background-size: cover;
+    background-position: 50% 50%;
+    top:10px;
+    -webkit-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.3);
+    -moz-box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.3);
+    box-shadow: inset 0px 0px 5px 1px rgba(0,0,0,0.3);
+    -webkit-transition: top 0.7s ease-in-out, background 0.15s ease;
+    -moz-transition:    top 0.7s ease-in-out, background 0.15s ease;
+    -o-transition:      top 0.7s ease-in-out, background 0.15s ease;
+    -ms-transition:     top 0.7s ease-in-out, background 0.15s ease;
+}
+
+.photo.active
+{
+    top:-80px;
+}
+.card ul
+{
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+    margin-top:10px;
+    margin-bottom:10px;
+    font-size: 12px;
+    -webkit-transition: all 0.7s ease-in-out;
+    -moz-transition:    all 0.7s ease-in-out;
+    -o-transition:      all 0.7s ease-in-out;
+    -ms-transition:     all 0.7s ease-in-out;
+}
+
+.card ul b {
+	color: #f77d00;
+}
+
+.card ul.active
+{
+    opacity:0;
+    visibility: hidden;
+}
+
+.card i
+{
+    font-size: 25px;
+    display: inline-block;
+    margin-top:10px;
+    margin-left: 40px;
+    margin-right: 150px;
+    width: 300px;;
+    text-align: left;
+    color: #C7D0E1;
+}
+
+.remove-item {
+	cursor: pointer;
+	float: right;
+}
